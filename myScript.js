@@ -10,7 +10,7 @@ function playRound() {
     
     console.log (`You: ${playerSelection} computer: ${computerSelection}`)
  
-   if (playerSelection === "rock" && computerSelection === "scissors") { 
+if ((playerSelection === "rock" && computerSelection === "scissors") || (playerSelection === "paper" && computerSelection === "rock") || (playerSelection === "scissors" && computerSelection === "paper")) {
        console.log(`You win, ${playerSelection} beats ${computerSelection}`);
    } else if (playerSelection === computerSelection) {
        console.log("TIE")
